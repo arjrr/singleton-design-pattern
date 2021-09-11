@@ -1,9 +1,9 @@
 class Singleton private constructor() {
 
     companion object {
-        private var singletonInstance: Singleton? = null
-        fun getInstance(): Singleton? {
-            if (singletonInstance == null) {
+        private lateinit var singletonInstance: Singleton
+        fun getInstance(): Singleton {
+            if (!::singletonInstance.isInitialized) {
                 singletonInstance = Singleton()
             }
             return singletonInstance
