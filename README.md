@@ -2,8 +2,6 @@
 
 Exemplo de implementação do padrão de projeto _Singleton_.
 
-Linguagem: Kotlin
-
 ## Definição
 
 Segundo Freeman e Freeman (2004):
